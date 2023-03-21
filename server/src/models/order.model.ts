@@ -13,11 +13,12 @@ class OrderModel extends Model {
 
 OrderModel.init({
   orderId: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
     primaryKey: true,
   },
   totalOrderQty: {
-    type: DataTypes.FLOAT,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
   totalOrderValue: {

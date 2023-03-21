@@ -4,9 +4,11 @@ import databaseConfig from '../config/database';
 const sequelize = new Sequelize(databaseConfig);
 
 class OrderItemModel extends Model {
-  public orderId!: string;
+  public keyOrderId!: string;
+  public orderId!: number;
   public itemOrder!: number;
   public itemName!: string;
+  public itemQty!: number;
   public itemValue!: number;
   public totalItemValue!: number;
   public readonly createdAt!: Date;
@@ -14,9 +16,13 @@ class OrderItemModel extends Model {
 }
 
 OrderItemModel.init({
-  orderId: {
+  keyOrderId: {
     type: DataTypes.STRING,
     primaryKey: true,
+  },
+  orderId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
   itemOrder: {
     type: DataTypes.INTEGER,
@@ -24,6 +30,10 @@ OrderItemModel.init({
   },
   itemName: {
     type: DataTypes.STRING,
+    allowNull: false,
+  },
+  itemQty: {
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
   itemValue: {
