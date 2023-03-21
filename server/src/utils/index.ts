@@ -1,3 +1,3 @@
-import { excludeOrderItems } from './order.util';
+import { excludeOrderItems, addItemsToOrder } from './order.util';
 
-export { excludeOrderItems };
+export { excludeOrderItems, addItemsToOrder };
