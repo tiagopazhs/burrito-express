@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { OrderItemModel, OrderModel, ProductModel } from "../models";
+import { excludeOrderItems } from "../utils";
 
 class OrderController {
 
@@ -87,9 +88,7 @@ class OrderController {
       let totalOrderQty = 0
       let totalOrderValue = 0
 
-      // Find every items of order and exclude it
-      const orderItemsToDelete = await OrderItemModel.findAll({ where: { orderId: orderId } });
-      await Promise.all(orderItemsToDelete.map(OrderItemModel => OrderItemModel.destroy()));
+      await excludeOrderItems(orderId)
 
       // Add items to the order 
       const orderItems = req.body.orderItems;
@@ -139,11 +138,9 @@ class OrderController {
       if (!deletedOrder) {
         return res.status(404).json({ error: "Order not found" });
       }
-      
-      // Find every items of order and exclude it
-      const orderItemsToDelete = await OrderItemModel.findAll({ where: { orderId: id } });
-      await Promise.all(orderItemsToDelete.map(OrderItemModel => OrderItemModel.destroy()));
-      
+
+      await excludeOrderItems(id)
+
       return res.status(200).json({ message: `Deleted order` });
     } catch (error) {
       console.error(error);
