@@ -4,7 +4,7 @@ import { CategoryModel } from "../models";
 class CategoryController {
 
   // CRUD Operations
-  // Create a new product
+  // Create a new category
   async create(req: Request, res: Response): Promise<Response> {
     try {
       const { name, description } = req.body;
@@ -16,7 +16,7 @@ class CategoryController {
     }
   }
 
-  // Read all products
+  // Read all categories
   async getAll(req: Request, res: Response): Promise<Response> {
     try {
       const categories = await CategoryModel.findAll();
@@ -27,7 +27,7 @@ class CategoryController {
     }
   }
 
-  // Read product by ID
+  // Read category by ID
   async getById(req: Request, res: Response): Promise<Response> {
     try {
       const { id } = req.params;
@@ -42,7 +42,7 @@ class CategoryController {
     }
   }
 
-  // Update a product
+  // Update a category
   async update(req: Request, res: Response): Promise<Response> {
     try {
       const { id } = req.params;
@@ -60,7 +60,7 @@ class CategoryController {
     }
   }
 
-  // Delete a product
+  // Delete a category
   async delete(req: Request, res: Response): Promise<Response> {
     try {
       const { id } = req.params;

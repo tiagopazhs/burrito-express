@@ -4,19 +4,19 @@ import { CategoryController } from '../controllers'
 const router = Router();
 
 // CRUD Operations
-// Create a new product
+// Create a new category
 router.post('/', CategoryController.create);
 
-// Read all products
+// Read all categories
 router.get('/', CategoryController.getAll);
 
-// Read product by ID
+// Read category by ID
 router.get('/:id', CategoryController.getById);
 
-// Update a product
+// Update a category
 router.put('/:id', CategoryController.update);
 
-// Delete a product
+// Delete a category
 router.delete('/:id', CategoryController.delete);
 
 export default router;
