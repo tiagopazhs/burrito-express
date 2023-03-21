@@ -17,7 +17,8 @@ class OrderItemModel extends Model {
 
 OrderItemModel.init({
   keyOrderId: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING,    
+    allowNull: false,
     primaryKey: true,
   },
   orderId: {
