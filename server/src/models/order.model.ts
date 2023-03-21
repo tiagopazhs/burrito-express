@@ -4,7 +4,7 @@ import databaseConfig from '../config/database';
 const sequelize = new Sequelize(databaseConfig);
 
 class OrderModel extends Model {
-  public orderId!: string;
+  public orderId!: number;
   public totalOrderQty!: number;
   public totalOrderValue!: number;
   public readonly createdAt!: Date;
