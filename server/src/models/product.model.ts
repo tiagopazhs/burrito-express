@@ -1,5 +1,7 @@
-import { Model, DataTypes } from 'sequelize';
-import sequelize from '../config/database';
+import { Sequelize, Model, DataTypes } from 'sequelize';
+import databaseConfig from '../config/database';
+
+const sequelize = new Sequelize(databaseConfig);
 
 class ProductModel extends Model {
   public id!: number;
@@ -40,6 +42,7 @@ ProductModel.init({
   },
 }, {
   sequelize,
+  modelName: 'ProductModel',
   tableName: 'ProductTable',
 });
 
