@@ -8,16 +8,16 @@ const router = Router();
 router.post('/', OrderController.create);
 
 // Read all orders
-// router.get('/', OrderController.getAll);
+router.get('/', OrderController.getAll);
 
-// // Read order by ID
-// router.get('/:id', OrderController.getById);
+// Read order by ID
+router.get('/:id', OrderController.getById);
 
-// // Update a order
-// router.put('/:id', OrderController.update);
+// Update a order
+router.put('/:id', OrderController.update);
 
-// // Delete a order
-// router.delete('/:id', OrderController.delete);
+// Delete a order
+router.delete('/:id', OrderController.delete);
 
 export default router;
 
