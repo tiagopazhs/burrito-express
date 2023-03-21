@@ -19,5 +19,15 @@ router.put('/:id', ProductController.update);
 // Delete a product
 router.delete('/:id', ProductController.delete);
 
+// Other Categories
+// Get products by category
+router.get('/category/:category', ProductController.getByCategory);
+
+// Update product image
+router.put('/:id/image', ProductController.updateImage);
+
+// Delete all products
+router.delete('/', ProductController.deleteAll);
+
 export default router;
 
