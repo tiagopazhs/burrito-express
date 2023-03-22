@@ -34,16 +34,19 @@ export default function CardCategory({ items }: Props) {
                         marginRight: SIZES.padding,
                         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
                         cursor: 'pointer',
+                        display: 'flex',
+                        flexDirection: 'column',
                     }}
                     onClick={() => onSelectCategory(item)}
                 >
                     <div
                         style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                             width: 50,
                             height: 50,
                             borderRadius: 25,
-                            alignItems: 'center',
-                            justifyContent: 'center',
                             backgroundColor:
                                 selectedCategory?.id === item.id ? COLORS.white : COLORS.lightGray,
                         }}
@@ -63,6 +66,7 @@ export default function CardCategory({ items }: Props) {
                             marginTop: SIZES.padding,
                             color: selectedCategory?.id === item.id ? COLORS.white : COLORS.black,
                             ...FONTS.body5,
+                            textAlign: 'center',
                         }}
                     >
                         {item.name}
