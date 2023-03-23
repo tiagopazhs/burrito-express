@@ -1,4 +1,5 @@
 import CardCategory from './CardCategory';
+import { SIZES } from '../constants';
 
 interface Props {}
 
@@ -15,8 +16,8 @@ export default function CategoryList({}: Props) {
   ];
 
   return (
-    <div>
-      <CardCategory items={items} />
+    <div style={{width: '100%', marginTop: SIZES.padding2}}>
+      <CardCategory items={items}/>
     </div>
   );
 }

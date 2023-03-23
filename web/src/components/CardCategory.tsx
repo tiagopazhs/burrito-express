@@ -19,7 +19,7 @@ export default function CardCategory({ items }: Props) {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
             {items.map((item) => (
                 <div
                     key={item.id}
@@ -44,7 +44,7 @@ export default function CardCategory({ items }: Props) {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            width: 50,
+                            width: 70,
                             height: 50,
                             borderRadius: 25,
                             backgroundColor:
