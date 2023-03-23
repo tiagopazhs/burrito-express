@@ -1,5 +1,5 @@
 <h1>Burrito Express<img src="https://cdn-icons-png.flaticon.com/512/4343/4343854.png" alt="mexican mask" style="height: 1em; margin-left: 0.4em; margin-top: 0.2em;"></h1>
-<p>Burrito Express é uma aplicação de delivery de comida mexicana que possui back-end, front-end e banco de dados relacional, construída com as tecnologias Node.js, React.js e Typescript. Ela permite a criação, leitura, atualização e exclusão de produtos e categorias, bem como o lançamento de vendas. </p>
+<p>Burrito Express é uma aplicação de delivery de comida mexicana que possui back-end, front-end e banco de dados relacional. Ela permite a criação, leitura, atualização e exclusão de produtos e categorias, bem como o lançamento de vendas. </p>
 <h3>Propósito</h3>  
 <p>O propósito deste projeto é avaliar habilidades e competências como um desenvolvedor Fullstack.</p>
 
