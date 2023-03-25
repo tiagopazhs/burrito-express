@@ -16,7 +16,7 @@ export default function CategoryList({}: Props) {
   ];
 
   return (
-    <div style={{width: '100%', paddingLeft: SIZES.padding, marginTop: SIZES.padding2}}>
+    <div style={{width: '100%', paddingLeft: SIZES.padding}}>
       <CardCategory items={items}/>
     </div>
   );
