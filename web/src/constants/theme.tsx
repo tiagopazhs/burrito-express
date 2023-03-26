@@ -1,6 +1,6 @@
 export const COLORS = {
     // base colors
-    primary: "#FC6D3F", // orange
+    primary: "#159584", // orange
     secondary: "#CDCDD2", // gray
 
     // colors
