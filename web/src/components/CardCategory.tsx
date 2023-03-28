@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { COLORS, SIZES, FONTS } from '../constants';
+import { COLORS, FONTS } from '../constants';
 
 interface Props {
     items: {
@@ -19,54 +19,35 @@ export default function CardCategory({ items }: Props) {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
             {items.map((item) => (
                 <div
+                    className='flex-col items-center justify-center text-center cursor-pointer p-4 rounded-3xl mr-8'
                     key={item.id}
                     style={{
-                        padding: SIZES.padding,
-                        paddingBottom: SIZES.padding * 2,
-                        backgroundColor:
-                            selectedCategory?.id === item.id ? COLORS.primary : COLORS.white,
-                        borderRadius: SIZES.radiusCategory,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        marginRight: SIZES.padding,
+                        backgroundColor: selectedCategory?.id === item.id ? COLORS.primary : COLORS.white,
                         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        flexDirection: 'column',
                     }}
                     onClick={() => onSelectCategory(item)}
                 >
                     <div
+                        className='h-14 w-20 flex items-center justify-center rounded-3xl'
                         style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: 70,
-                            height: 50,
-                            borderRadius: 25,
-                            backgroundColor:
-                                selectedCategory?.id === item.id ? COLORS.white : COLORS.lightGray,
+                            backgroundColor: selectedCategory?.id === item.id ? COLORS.white : COLORS.lightGray,
                         }}
                     >
                         <img
+                            className='h-14 w-20'
                             src={item.icon}
                             alt={item.name}
-                            style={{
-                                width: 30,
-                                height: 30,
-                            }}
                         />
                     </div>
 
                     <span
+                        className='text-center'
                         style={{
-                            marginTop: SIZES.padding,
                             color: selectedCategory?.id === item.id ? COLORS.white : COLORS.black,
                             ...FONTS.body5,
-                            textAlign: 'center',
                         }}
                     >
                         {item.name}
