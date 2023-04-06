@@ -20,6 +20,7 @@ export default function CardOrder({ items }: Props) {
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' }}>
             {items.map((item) => (
                 <div
+                    className='rounded-r'
                     key={item.id}
                     style={{
                         backgroundColor: selectedOrder?.id === item.id ? COLORS.primary : COLORS.white,
@@ -40,6 +41,7 @@ export default function CardOrder({ items }: Props) {
                     onClick={() => onSelectOrder(item)}
                 >
                     <img
+                        className=''
                         src={item.icon}
                         alt={item.name}
                         style={{

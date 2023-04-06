@@ -22,7 +22,7 @@ export default function CardCategory({ items }: Props) {
         <div style={{ display: 'flex', flexDirection: 'row' }}>
             {items.map((item) => (
                 <div
-                    className='flex-col items-center justify-center text-center cursor-pointer p-4 rounded-3xl mr-8'
+                    className='flex-col items-center justify-center text-center cursor-pointer rounded-3xl mr-4 md:mr-8 p-2 md:p-4'
                     key={item.id}
                     style={{
                         backgroundColor: selectedCategory?.id === item.id ? COLORS.primary : COLORS.white,
@@ -31,13 +31,13 @@ export default function CardCategory({ items }: Props) {
                     onClick={() => onSelectCategory(item)}
                 >
                     <div
-                        className='h-14 w-20 flex items-center justify-center rounded-3xl'
+                        className='flex items-center justify-center rounded-3xl h-9 md:h-14 w-20 md:w-20'
                         style={{
                             backgroundColor: selectedCategory?.id === item.id ? COLORS.white : COLORS.lightGray,
                         }}
                     >
                         <img
-                            className='h-14 w-20'
+                            className='h-8 md:h-14 w-10 md:w-20'
                             src={item.icon}
                             alt={item.name}
                         />
