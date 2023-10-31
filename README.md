@@ -99,7 +99,7 @@ npm run db:migrate
 
 In other terminal window navigate to the client repository and install the dependencies: 
 ```python
-cd client && npm install
+cd web && npm install
 ```
 
 
