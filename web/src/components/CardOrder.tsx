@@ -69,7 +69,7 @@ export default function CardOrder({ items }: Props) {
                         <span style={{ color: COLORS.white }}>{item.name}</span>
                         <div style={{ width: '4%', display: 'flex', alignItems: 'center' }}>
                             <img
-                                src={'../icons/star.png'}
+                                src={process.env.PUBLIC_URL + '/icons/star.png'}
                                 alt={'star'}
                                 style={{ marginBottom: SIZES.padding / 2.1 , marginRight: SIZES.padding }}
                             />

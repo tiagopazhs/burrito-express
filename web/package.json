@@ -1,7 +1,7 @@
 {
   "name": "web",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "http://tiagopazhs.github.io/burrito-express/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
