@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/burrito-express/static/css/main.cd41ed80.css",
+    "main.js": "/burrito-express/static/js/main.3e3bb057.js",
+    "static/js/787.d1d4a2c2.chunk.js": "/burrito-express/static/js/787.d1d4a2c2.chunk.js",
+    "static/media/Roboto-Regular.ttf": "/burrito-express/static/media/Roboto-Regular.d08b3cc873089fdba7fb.ttf",
+    "index.html": "/burrito-express/index.html",
+    "main.cd41ed80.css.map": "/burrito-express/static/css/main.cd41ed80.css.map",
+    "main.3e3bb057.js.map": "/burrito-express/static/js/main.3e3bb057.js.map",
+    "787.d1d4a2c2.chunk.js.map": "/burrito-express/static/js/787.d1d4a2c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd41ed80.css",
+    "static/js/main.3e3bb057.js"
+  ]
+}
