@@ -1,7 +1,7 @@
 <h1>Burrito Express<img src="https://cdn-icons-png.flaticon.com/512/4343/4343854.png" alt="mexican mask" style="height: 1em; margin-left: 0.4em; margin-top: 0.2em;"></h1>
-<p>Burrito Express é uma aplicação de delivery de comida mexicana que possui back-end, front-end e banco de dados relacional. Ela permite a criação, leitura, atualização e exclusão de produtos e categorias, bem como o lançamento de vendas. </p>
-<h3>Propósito</h3>  
-<p>O propósito deste projeto é avaliar habilidades e competências como um desenvolvedor Fullstack.</p>
+<p>Burrito Express is an applicarion to delivery mexican food that have back-end, front-end (future) and data base. It allows to create, read, apdate, exclude products and exclude categories, as it allows to manage orders. </p>
+<h3>Purpose</h3>  
+<p>The purpose of this project is to show habilities and skils of a Full Stack Software Developer.</p>
 
 <h4>Screenshot:</h4>
 <p align="center">
@@ -11,86 +11,77 @@
 
 ## Índice
 
-  * [Funcionalidades](#funcionalidades)
-  * [Tecnologias](#tecnologias)
-  * [Instalação](#instalação)
+  * [Features](#features)
+  * [Tecnologies](#tecnologies)
+  * [Instalation](#instalation)
   
   
-## Funcionalidades
-<p>A aplicação foi desenvolvida com uma estrutura robusta no back-end, incluindo rotas, middlewares, controllers, utils e services bem definidos. Além disso, foi implementado um banco de dados com tabelas de produtos, categorias, pedidos e pedidos por item. Embora o front-end apresente algumas limitações devido à necessidade de conclusão do projeto até 22/03/2023, todas as rotas já podem ser testadas com o postman e novas versões serão disponibilizadas em breve.</p>
+## Features
+<p>The application was developed with a robust backend structure, including well-defined routes, middlewares, controllers, utils, and services. Additionally, a database with tables for products, categories, orders, and order items was implemented. Although the front-end has some limitations due to the need to complete the interface, all routes can already be tested with Postman.</p>
 
-<h3>Versão 1 - atual</h3>
-<h4>Funcionalidades implementadas</h4>
+<h3>Version 1:</h3>
+<h4>Funcionalities</h4>
 
-* Back-end em NodeJs com TypeScript.
-* CRUD de categorias e produtos para campos personalizados.
-* Rotas adicionais: alterar imagem, filtro de produtos e deletar tudo.
-* Implantação do CRUD de pedidos com duas tabelas: orders e ordersItem. 
-* Banco de dados relacional Postgres.
-* Migração e documentação do banco de dados com Sequelize.
-* Tela principal em React.tsx.
-* Para explorar diferentes estilizações: Tailwind, pasta de constantes customizáveis e Material UI para o componente TopBar/alerts.
+* Back-end using NodeJs + TypeScript.
+* CRUD of categories and products to the custom fields.
+* Adtional routes: Update image, products filter and delete all.
+* CRUD implementation with two tables: orders e ordersItem. 
+* Relational database PostgreSQL.
+* Migration and documentation of the database using Sequelize.
+* Main screen using React.tsx.
+* To explore different stylings: Tailwind, a folder for customizable constants, and Material UI for the TopBar/alerts component.
 
-<h3>Versão 2</h3>
-<h4>Funcionalidades previstas</h4>
+<h3>To do next version:</h3>
+<h4>Future features</h4>
 
-* Telas de alterar quantidade, carrinho e pedidos.
-
-<h3>Versão 3</h3>
-<h4>Funcionalidades previstas</h4>
-
-* Implementação de personalização dos campos de categorias e produtos diretamente pelo usuário no front-end.
-* Deploy na Azure.
-* Testes do back-end com Jest.
-* Documentação da Api com Swagger
-
-<h3>Versão 4</h3>
-<h4>Funcionalidade prevista</h4>
-
-* Criação da aplicação Burrito Express Mobile com React Native.
-
+* Screens: Update qty, cart and orders.
+* Implemnt CRUD directly from front-end instead postman.
+* Deploy in Azure.
+* Back-end with Jest.
+* Swagger api documentation.
+ 
   
-## Tecnologias
+## Tecnologies
 
-<h4>Resumo:</h4>
-<p>No projeto foram utilizados o Node.js com Typescript como plataforma principal para o back-end e o framework Express.js para criação de rotas e middleware. PostgreSQL para o banco de dados relacional que foi gerenciado pelo ORM Sequelize. Na interface do usuário, utilizou-se a biblioteca React.tsx tipada e para criar estilos e layouts responsivos utilizou-se Material UI e Tailwind CSS. Para testar e documentar as APIs, a ferramenta Postman foi utilizada.</p>
+<h4>Summary:</h4>
+<p>In the project, Node.js with TypeScript was used as the main platform for the back-end, and the Express.js framework was employed to create routes and middleware. PostgreSQL was utilized as the relational database managed by the Sequelize ORM. For the user interface, the typed React.tsx library was used, and to create responsive styles and layouts, Material UI and Tailwind CSS were employed. Postman was used for testing and documenting the APIs.</p>
 
 <h4>Ferramentas:</h4>
 <p align="center">
     <img src="https://skillicons.dev/icons?i=ts,js,react,html,css,tailwind,materialui,nodejs,express,postgres,sequelize,postman,git" />
 </p>
 
-## Instalação
+## Instalation
 
 <h3>Server:</h3>
 
-<p>Clone o repositório em sua máquina local:
+<p>Clone the repository to your local machine:
 
 ```python
 git clone https://github.com/tiagopazhs/burrito-express.git
 ```
 
-<p>Navegue até o diretório server do projeto: 
+<p>Navigate to the project's server directory: 
 
 ```python
 cd burrito-express
 cd server
 ```
 
-<p>Instale as dependências do projeto utilizando o gerenciador de pacotes npm: 
+<p>Install the project's dependencies using the npm package manager:
 
 ```python
 npm install
 ```
 
-Inicie o servidor Node.js:
+Start the server:
 ```python
 npm run start
 ```
 
-<h3>Banco de dados:</h3>
+<h3>Data base:</h3>
 
-Configure as variáveis de ambiente no arquivo .env, com as credenciais do banco de dados e a porta utilizada pela aplicação:
+Setup the enviroment variables in the file .env, with the DB credentials and the aplication port.
 
 ```python
 DB_USER=seu-username
@@ -99,29 +90,29 @@ DB_NAME=nome-do-banco-de-dados
 ```
 
 
-Crie as tabelas do banco de dados executando as migrations do Sequelize: 
+Create the tables using Sequelize migrations:
 ```python
 npm run db:migrate
 ```
 
 <h3>Client:</h3>
 
-Em outra janela do terminal, navegue até o diretório client e instale as dependências do projeto: 
+In other terminal window navigate to the client repository and install the dependencies: 
 ```python
 cd client && npm install
 ```
 
 
-Inicie o servidor de desenvolvimento do React:
+Start the Client:
 ```python
 npm start
 ```
 
-Abra o navegador e acesse http://localhost:3000 para visualizar a aplicação em funcionamento.
+Open your browser and go to http://localhost:3000 to show the application running.
 
 <h3>Postman:</h3>
 
-Abra o link no navegador para abrir o workspace no postman e testar os Cruds.
+Open the follow link on your broswe to show the postman workspace and test CRUDs..
 
 https://www.postman.com/satellite-pilot-16703156/workspace/publicws
 
