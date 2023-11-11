@@ -9,7 +9,7 @@
 </p>
 
 
-## Índice
+## Index
 
   * [Features](#features)
   * [Tecnologies](#tecnologies)
